@@ -17,7 +17,7 @@ module ITGlue
       @itglue_api_key    = ITGlue.config.itglue_api_key
       @default_page_size = ITGlue.config.default_page_size
       self.class.base_uri  ITGlue.config.itglue_api_base_uri
-      self.class.logger    ITGlue.config.logger
+      self.class.debug_output  ITGlue.config.logger
     end
 
     def execute(http_method, path, payload = nil, options = {})
